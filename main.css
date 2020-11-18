@@ -1,0 +1,491 @@
+@font-face
+{
+    src: url(https://cdn.glitch.com/7f9e4f94-be6e-4dc1-9967-4d2ffc3952c2%2FNetflix%20Sans%20Bold.otf?v=1605658874971);
+    font-family: NetflixBold;
+}
+@font-face
+{
+    src: url(https://cdn.glitch.com/7f9e4f94-be6e-4dc1-9967-4d2ffc3952c2%2FNetflix%20Sans%20Light.otf?v=1605658874970);
+    font-family: NetflixRegular;
+}
+:root
+{
+    --btn-color:#df0611;
+    --text-color:#ffffff;
+    --bold-font:NetflixBold;
+    --regularfont:NetflixRegular;
+    
+     /* mobile differents font size */
+     --mobile-text-title : 2rem;
+     --mobile-text-subtitle : 1.4rem;
+     --mobile-text :1rem;
+
+     /* tablets differents font size*/
+     --tablet-text-title : 2.5rem;
+     --tablet-text-subtitle : 1.9rem;
+     --tablet-text :1.3rem;
+
+      /* desktop differents font size*/
+      --desktop-text-title : 3rem;
+      --desktop-text-subtitle : 2.9rem;
+      --desktop-text :1.8rem;
+ 
+
+}
+body
+{
+    overflow-x: hidden;
+    color: var(--text-color);
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--regularfont)
+
+}
+.hero-section
+{
+    background-image:linear-gradient(#000000Ae,#000000Ae),url(https://cdn.glitch.com/7f9e4f94-be6e-4dc1-9967-4d2ffc3952c2%2Fbackground.jpg?v=1605658910003);
+    background-position: center;
+    background-size: cover;
+    height:40rem;
+    border-bottom: 10px solid #222222;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+.btn
+{
+    background-color: var(--btn-color);
+    width: 19%;
+    text-align: center;
+    padding: .5rem;
+    height: auto;
+    border-radius: .1rem;
+}
+.Logo
+{
+    width: 38%;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    transform: translateY(20%);
+    text-align: center;
+
+}   
+.hero-section--title
+{
+    font-size: var(--mobile-text-title);
+    font-family:var(--bold-font);
+    padding: .3rem;
+}
+.hero-section--subtitle
+{
+    font-size: var(--mobile-text-subtitle);
+    padding: .3rem;
+    padding-bottom: 1rem;
+}
+.hero-section--text
+{
+    font-size: var(--mobile-text);
+    padding: .3rem;
+}
+.hero-section--input
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .3em;
+    align-items: center;
+}
+input
+{
+    position: relative;
+    width: 90%;
+    height: 2.5rem;
+    color: black;
+    padding: .3rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+label
+{
+    position: absolute;
+    color: black;
+    transform: translateY(75%);
+    left: 2rem;
+    opacity: .5;
+    transition: 0.3s ease-in-out;
+}
+input:focus + label
+{
+    transform: translateY(0%);   
+    font-size: 0.9rem;
+}
+.hero-section--btn
+{
+    width: 45%;
+    padding: .3rem;
+    height: 1.5em;
+    margin-bottom: 1rem;
+}
+.all-section
+{
+    background-color: black;
+    padding: .8rem;
+    position: relative;
+    border-bottom: 10px solid #222222;
+}
+
+.section--title
+{
+    font-size: var(--mobile-text-title);
+    font-family:var(--bold-font);
+    padding: 1.1rem;
+
+}
+.section--text
+{
+    font-size: var(--mobile-text);
+    line-height: 1.5rem;
+}
+.img
+{
+    width: 100%;
+    position: relative;
+}
+video
+{
+    width: 93%;
+    position: absolute;
+}
+.laptop-video
+{
+    width: 60%;
+    top: 42%;
+    left: 20%;
+}   
+
+.download-animmation
+{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between      ;
+    padding: 1.5rem;
+    background-color: black;
+    width: 65%;
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+    height: 1rem;
+    border: solid gray .1rem;
+    border-radius: .8rem;
+}
+.download-animation--text
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+}
+.download-animation--text h4
+{
+    color: #0071eb;
+}
+.circle
+{
+    border-radius: 50%;
+    background-color: #0071eb;
+    height: 25px;
+    width: 25px;
+}
+.medium-device-section  
+{
+    display: none;
+}
+.accordion-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50rem;
+   
+}
+.accordion-element
+{
+    background-color:#303030;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.accordion-element span
+{
+    display: flex;
+    justify-content: space-between;
+}
+.accordion-text
+{
+  display: none;
+}
+.footer-section
+{
+    
+   color:gray;
+    padding: 2rem;
+    text-align: left;
+}
+.footer-element
+{
+    display: flex;
+    font-size: .8rem;
+    padding: 1rem;
+    justify-content: space-around;
+    text-align: left;
+}
+.footer-element section
+{
+    line-height: 2.5rem;  
+}
+.footer-element section p
+{
+    cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .container
+{
+    
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    transform: translateY(15%);
+    text-align: center;
+}
+    .hero-section--title
+    {
+    font-size: 3.125rem;
+    padding: .3rem;
+    }
+    .hero-section--subtitle
+    {
+        font-size: var(--tablet-text-subtitle);
+        padding: .3rem;
+        padding-bottom: 1rem;
+    }
+    input
+    {
+        position: relative;
+        width: 70%;
+    }
+    .hero-section--text
+    {
+        font-size: var(--tablet-text);
+        padding: .3rem;
+    }
+    .section--title
+        {
+            font-size: var(--tablet-text-title);
+            padding: 1.1rem;
+        }
+    .section--text
+    {
+        font-size: var(--tablet-text);
+        line-height: 1.5rem;
+    }
+    .hero-section--btn
+    {      
+        width: 20%;
+        padding: 1rem;
+        height: 1.1em;
+        margin-bottom: 1rem;
+    }
+    .img
+    {
+        width: 70%;
+    }
+    video
+    {
+        width: 67%;
+    }
+.laptop-video
+    {
+        width: 42%;
+        top: 32%;
+        left: 29%;
+    } 
+    .medium-device-section  
+    {
+        display: block;
+    }
+    .download-animmation
+    {   
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        width: 35%;
+        left: 30%;
+    }
+    .accordion-section
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50rem;   
+}
+    .accordion-element
+    {
+        width: 70%;
+        margin: auto;
+    }
+
+}
+@media (min-width: 992px)
+{
+    .btn
+    {
+        width: 5%;
+    }
+    .Logo
+{
+    width: 10%;
+}
+    .container
+{
+    
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    transform: translateY(15%);
+    text-align: center;
+}
+    .hero-section--title
+    {
+    font-size: 3.125rem;
+    padding: .3rem;
+    }
+    .hero-section--subtitle
+    {
+        font-size: var(--tablet-text-subtitle);
+        padding: .3rem;
+        padding-bottom: 1rem;
+    }
+    input
+    {
+        position: relative;
+        width: 50%;
+        height: 3rem;
+    }
+    .hero-section--text
+    {
+        font-size: var(--tablet-text);
+        padding: .3rem;
+    }
+    .section--title
+        {
+            font-size: 13rem;
+            padding: 1.1rem;
+        }
+    .section--text
+    {
+        font-size: var(--tablet-text);
+        line-height: 1.5rem;
+    }
+    .hero-section--input
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .hero-section--btn
+    {      
+        width: 20%;
+        text-align: center;
+        font-size: var(--desktop-text);
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .all-section
+    {
+        display: flex;
+        
+        text-align: center;
+    }
+    .medium-device-section
+    {
+        flex-direction: row-reverse;
+    }
+    .img
+    {
+        width: 45%;
+    }
+    video
+    {
+        width: 38%;
+        left: 61%;
+    }
+.laptop-video
+    {
+        width: 28%;
+        top: 12%;
+        left: 63%;
+    }
+    .offline-section
+    {
+        flex-direction: row-reverse;
+    }
+    .download-animmation
+    {   
+        display: flex;
+        
+        align-items: center;
+        padding: 1.5rem;
+        width: 20%;
+        left: 10%;
+    }
+    .description
+    {
+        width: 40%;
+        padding: 7rem;
+        text-align: left;
+    }
+    .section--title
+        {
+            font-size: var(--desktop-text-title);
+            padding: 1.1rem;
+        }
+    .section--text
+    {
+        font-size: var(--desktop-text);
+      line-height: 2.5rem;
+    }
+    label
+    {
+        position: absolute;
+        color: black;   
+        bottom: 4rem;
+        left: 14rem;
+        opacity: .5;
+        transition: 0.3s ease-in-out;
+    }
+    input:focus + label
+{
+    bottom: 4.3rem;
+    font-size: 0.9rem;
+}
+.accordion-element
+{
+   font-size: var(--desktop-text);
+    width: 60%;
+    margin: auto;
+}
+}
